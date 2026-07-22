@@ -10,6 +10,9 @@ operator 白皮书 + 通用知识 skill。兼容任何读 Markdown skill 的 age
 | Skill | 作用 |
 |---|---|
 | [`olympus-operator`](./skills/olympus-operator/SKILL.md) | 通过 `@evg-olympus/cli` 操作整个 Olympus 系统 —— 模块联动模型、18 条隐性依赖检查表、5 条端到端维护 playbook。旗舰 skill。 |
+| [`image-prompt-craft`](./skills/image-prompt-craft/SKILL.md) | 电影级写实文生图提示词工程,跨镜锁死角色/场景/走位。 |
+| [`emotional-narrative`](./skills/emotional-narrative/SKILL.md) | 用动画传达情感 —— 让观众产生共鸣的情感节拍。 |
+| [`filmmaker`](./skills/filmmaker/SKILL.md) | 电影级叙事排序 + 动画原则,用于视频叙事。 |
 
 通用知识 skill(提示词工程、叙事、影视制作 …)逐步增量加入 —— 每个都是自包含 Markdown,不依赖 Olympus runtime。
 

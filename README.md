@@ -11,6 +11,9 @@ Markdown-skill agent (Claude Code, Cursor, Codex, …).
 | Skill | What it does |
 |---|---|
 | [`olympus-operator`](./skills/olympus-operator/SKILL.md) | Operate the whole Olympus system through `@evg-olympus/cli` — the module-linkage model, an 18-point hidden-dependency checklist, and five end-to-end maintenance playbooks. The flagship skill. |
+| [`image-prompt-craft`](./skills/image-prompt-craft/SKILL.md) | Photoreal image-prompt engineering with cross-shot character/scene/staging consistency. |
+| [`emotional-narrative`](./skills/emotional-narrative/SKILL.md) | Convey feeling through animation — emotional beats the audience cares about. |
+| [`filmmaker`](./skills/filmmaker/SKILL.md) | Cinematic sequencing + animation principles for video storytelling. |
 
 General-purpose knowledge skills (prompt craft, narrative, filmmaking, …) land
 incrementally — each is self-contained Markdown, no Olympus runtime required.
