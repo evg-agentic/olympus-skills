@@ -17,6 +17,11 @@ npm install -g @evg-olympus/cli
 olympus login          # browser device-flow; must be on the operator allowlist
 ```
 
+Production is `https://forgeolympus.dipbit.xyz` and is the CLI's built-in
+default, so `olympus login` needs no flag. An older install still pointed at the
+retired gateway is migrated on first use; to target another backend, pass
+`--api https://…` (remembered per `--profile`).
+
 Every write command is two-step (preview → confirm), supports `--dry-run` and
 `-y`, and is gated by the operator allowlist on the backend — you never decide
 access. Config is DB-resident (ADR-0017); after import-level changes the
@@ -111,6 +116,7 @@ deactivate/remove yourself.
 | agents | `list` `show` `new` `set-skills` `add-skill` `set-tools` `set-model` `archive` `unarchive` `duplicate` `rules` |
 | specialists (a2a) | `list` `show` `options` `new` `update` `delete` |
 | models (brain) | `list` `upsert` `delete` `set-credential` |
+| conversation | `model <id>` `set-model <id> <ref|reset>` — a thread's model is the participant's per-(user, agent) pick from the agent's `brain.models`; `set-model` writes it for every participant (same row as the `/model` chat command) |
 | channels (lark) | `list` `set` `delete` |
 | integrations | `list` `set` `delete` `set-secret` |
 | tools | `list` |
